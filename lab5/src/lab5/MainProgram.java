@@ -20,7 +20,6 @@ public class MainProgram {
 		double x12 = 0;
 
 		
-		
 		for (int i = 0; i < x;i++) {
 			int roll = r.nextInt(1, 7) + r.nextInt(1, 7);
 			if(roll == 2) {
