@@ -8,7 +8,6 @@
 public class ManuTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Entree entree1 = new Entree("entree 1", "Chicken sandwich with with no pickles", 150);
 		
 		Entree entree2 = new Entree("entree 2", "Tuna sandwich with with pickles", 1650);
@@ -21,16 +20,17 @@ public class ManuTest {
 		Menu menu2 = new Menu("Menu 2", entree2, side1, salad1, dessert1);
 		Menu menu3 = new Menu("Menu 3");
 		
+		// print result
 		System.out.println(menu1.name + "\n");
-		System.out.println(menu1.totalCalories() + "\n");
+		System.out.println("This is the total calories of Menu 1: "+menu1.totalCalories() + "\n");
 		System.out.println(menu1.describtion() + "\n");
 		
 		System.out.println(menu2.name + "\n");
-		System.out.println(menu2.totalCalories() + "\n");
+		System.out.println("This is the total calories of Menu 2: "+menu2.totalCalories() + "\n");
 		System.out.println(menu2.describtion() + "\n");	
 		
 		System.out.println(menu3.name + "\n");
-		System.out.println(menu3.totalCalories() + "\n");
+		System.out.println("This is the total calories of Menu 3: "+menu3.totalCalories() + "\n");
 		System.out.println(menu3.describtion() + "\n");	
 	}
 }

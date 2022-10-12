@@ -15,7 +15,8 @@ public class Side {
 		setDiscribtion(d);
 		setCalories(c);
 	}
-
+	
+	// Accessors / Mutators	
 	public String getName() {
 		return name;
 	}

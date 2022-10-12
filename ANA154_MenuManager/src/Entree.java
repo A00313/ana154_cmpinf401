@@ -16,7 +16,8 @@ public class Entree {
 		setDiscribtion(d);
 		setCalories(c);
 	}
-
+	
+	// Accessors / Mutators	
 	public String getName() {
 		return name;
 	}
