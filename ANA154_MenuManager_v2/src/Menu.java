@@ -78,4 +78,45 @@ public class Menu {
 		}
 		return print;
 	}
+
+	// getter and setter
+	public Entree getEntree() {
+		return entree;
+	}
+
+	public void setEntree(Entree entree) {
+		this.entree = entree;
+	}
+
+	public Side getSide() {
+		return side;
+	}
+
+	public void setSide(Side side) {
+		this.side = side;
+	}
+
+	public Salad getSalad() {
+		return salad;
+	}
+
+	public void setSalad(Salad salad) {
+		this.salad = salad;
+	}
+
+	public Dessert getDessert() {
+		return dessert;
+	}
+
+	public void setDessert(Dessert dessert) {
+		this.dessert = dessert;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 }

@@ -18,14 +18,12 @@ public class RecordList {
 
 		/**
 		 * Creates a node with the given data
+		 * 
 		 * @param dataValue data to hold in this node
 		 */
 		public Node(Record dataValue) {
 			next = null;
 			data = dataValue;
-		}
-		public void setNext(Node nextValue) {
-			next = nextValue;
 		}
 	}
 
@@ -41,6 +39,7 @@ public class RecordList {
 
 	/**
 	 * Finds the index of the record with the given name in the list
+	 * 
 	 * @param name name to search for
 	 * @return index of name in list if found, -1 otherwise
 	 */
@@ -55,12 +54,15 @@ public class RecordList {
 		}
 
 		// we got to the end of the list without finding our target
-		if (currentNode.next == null) return -1;
-		else return index;
+		if (currentNode.next == null)
+			return -1;
+		else
+			return index;
 	}
 
 	/**
 	 * Adds the given item to the list, sorted by time (lowest to highest)
+	 * 
 	 * @param data data to add
 	 * @return the index the data was inserted at
 	 */
@@ -69,7 +71,7 @@ public class RecordList {
 		Node currentNode = head;
 		int index = 0;
 		Node temp = new Node(data);
-		
+
 		if (head.next == null) {
 			head.next = temp;
 			return index;
@@ -81,21 +83,13 @@ public class RecordList {
 		}
 		temp.next = currentNode.next;
 		currentNode.next = temp;
-		//currentNode.next.setNext(currentNode);
+		// currentNode.next.setNext(currentNode);
 
 		// we got to the end of the list without finding our target
-		if (currentNode.next == null) return -1;
-		else return index;
-		
-	
-		 
-		// traverse to place to insert node (i.e. get currentNode to be the one
-		// immediately before where we want to insert -- the last node with a strictly
-		// lower time)
-
-
-		// add new node in the spot we've found
-
+		if (currentNode.next == null)
+			return -1;
+		else
+			return index;
 	}
 
 	/**
@@ -113,18 +107,23 @@ public class RecordList {
 	}
 
 	/**
-	 * Write out the contents of the linked list to the given file, one entry per line
+	 * Write out the contents of the linked list to the given file, one entry per
+	 * line
+	 * 
 	 * @param filename name of the file to write the list to
 	 */
 	public void writeToFile(String filename) {
 		Node currentNode = head.next;
+		String userDirectory = System.getProperty("user.dir");
 		try {
-			FileWriter fw = new FileWriter(filename);
+			FileWriter fw = new FileWriter(userDirectory + filename);
 			BufferedWriter bw = new BufferedWriter(fw);
-			
-			
+
 			while (!(currentNode == null)) {
-				bw.write(currentNode.data.getName() +"," + currentNode.data.getTime()  + "\n");
+				bw.append(currentNode.data.getName());
+				bw.append(",");
+				bw.append(String.valueOf(currentNode.data.getTime()));
+				bw.append("\n");
 				currentNode = currentNode.next;
 			}
 			bw.close();
@@ -132,26 +131,5 @@ public class RecordList {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		// Add your own code here to write out the list contents to a file. You can use
-		// our file writing examples and the print() method above as a guide.
 	}
-
 }
-
-//public class Record {
-//	private String name;
-//	private double time;
-//
-//	public Record(String name, double time) {
-//		this.name = name;
-//		this.time = time;
-//	}
-//
-//	public String getName() {
-//		return this.name;
-//	}
-//
-//	public double getTime() {
-//		return this.time;
-//	}
-//}

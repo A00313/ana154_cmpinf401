@@ -1,0 +1,4 @@
+Ghadeer,5.0
+Jafar,10.0
+Ammr,15.0
+Yasir,20.0
