@@ -1,0 +1,24 @@
+Menu 1
+Entree: Sirloin Steak | Describtion: A delicious piece of 1/2 a pound of our carefully selected meat grilled and seasoned. Choose how much you want it cooked | Calories: 820 | Price: 22.5
+Side: Rice | Describtion: Plain rice | Calories: 160 | Price: 3.5
+Salad: Mixed Vegetables | Describtion: Includes small tomatoes, lettuce, cucumber, spinach and arugula | Calories: 90 | Price: 7.0
+Dessert: Ice Cream | Describtion: Choose among vanilla, mango, pineapple, chocolate and orange ice cream | Calories: 250 | Price: 3.2
+Total Calories of Menu: 1320
+Total Price of Menu: 36.2
+
+Menu 2
+Entree: Sirloin Steak | Describtion: A delicious piece of 1/2 a pound of our carefully selected meat grilled and seasoned. Choose how much you want it cooked | Calories: 820 | Price: 22.5
+Side: Rice | Describtion: Plain rice | Calories: 160 | Price: 3.5
+Salad: Mixed Vegetables | Describtion: Includes small tomatoes, lettuce, cucumber, spinach and arugula | Calories: 90 | Price: 7.0
+Dessert: Ice Cream | Describtion: Choose among vanilla, mango, pineapple, chocolate and orange ice cream | Calories: 250 | Price: 3.2
+Total Calories of Menu: 1320
+Total Price of Menu: 36.2
+
+Random Menu
+Entree: Deep fried chicken breasts | Describtion: Deep fried chicken breasts using our traditional powder receipt | Calories: 560 | Price: 12.0
+Side: Rice | Describtion: Plain rice | Calories: 160 | Price: 3.5
+Salad: Quinoa | Describtion: Quinoa lightly salted | Calories: 120 | Price: 4.0
+Dessert: Ice Cream | Describtion: Choose among vanilla, mango, pineapple, chocolate and orange ice cream | Calories: 250 | Price: 3.2
+Total Calories of Menu: 1090
+Total Price of Menu: 22.7
+
