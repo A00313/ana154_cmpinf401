@@ -41,7 +41,7 @@ public class DetailsWindow {
 	 */
 	private void initialize() {
 		if (menuSelected != null) {
-			frame = new JFrame(menuSelected);
+			frame = new JFrame("Menu: " + menuSelected);
 		}
 		else {
 			frame = new JFrame();
