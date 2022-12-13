@@ -206,17 +206,6 @@ public class MenuManagerGUI {
 		JButton btnNewButton_2 = new JButton("Details");
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
-//				EventQueue.invokeLater(new Runnable() {
-//					public void run() {
-//						try {
-//							DetailsFrame frame = new DetailsFrame();
-//							frame.setVisible(true);
-//						} catch (Exception e) {
-//							e.printStackTrace();
-//						}
-//					}
-//				});
 				if (list.getSelectedValue() != null) {
 					menuSelected = list.getSelectedValue().toString();
 				}
@@ -263,15 +252,10 @@ public class MenuManagerGUI {
 		});
 		btnNewButton_4.setBounds(684, 505, 110, 21);
 		frame.getContentPane().add(btnNewButton_4);
-		
-		
-		
-		
+
 		
 		list = new JList(menuStringList);
 		list.setBorder(BorderFactory.createLineBorder(Color.black));
-		
-		
 		
 		
 		list.setBounds(433, 83, 350, 400);

@@ -46,7 +46,7 @@ public class DetailsWindow {
 		else {
 			frame = new JFrame();
 		}
-		frame = new JFrame();
+		
 		
 		frame.setBounds(350, 200, 850, 500);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
